@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="真理惟一可靠的标准就是永远自相符合.">
+<meta name="description" content="1 安装wget如果系统已安装wget,请跳过此步骤yum install wget 2 更新系统 #更新yum软件包yum check-update   #更新系统yum update 3禁用防火墙systemctl status firewalld.service    ##查看防火墙systemctl stop firewalld.service      ##停止防火墙systemctl">
 <meta name="keywords" content="play">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LAMP环境安装和根据端口配置多个项目">
+<meta property="og:url" content="http://yoursite.com/2019/07/13/LAMP环境安装和根据端口配置多个项目/index.html">
 <meta property="og:site_name" content="Kevin">
-<meta property="og:description" content="真理惟一可靠的标准就是永远自相符合.">
+<meta property="og:description" content="1 安装wget如果系统已安装wget,请跳过此步骤yum install wget 2 更新系统 #更新yum软件包yum check-update   #更新系统yum update 3禁用防火墙systemctl status firewalld.service    ##查看防火墙systemctl stop firewalld.service      ##停止防火墙systemctl">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-10T17:47:27.834Z">
+<meta property="og:updated_time" content="2019-07-13T07:52:42.846Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About">
-<meta name="twitter:description" content="真理惟一可靠的标准就是永远自相符合.">
+<meta name="twitter:title" content="LAMP环境安装和根据端口配置多个项目">
+<meta name="twitter:description" content="1 安装wget如果系统已安装wget,请跳过此步骤yum install wget 2 更新系统 #更新yum软件包yum check-update   #更新系统yum update 3禁用防火墙systemctl status firewalld.service    ##查看防火墙systemctl stop firewalld.service      ##停止防火墙systemctl">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/13/LAMP环境安装和根据端口配置多个项目/">
 
 
 
 
 
-  <title>About | Kevin</title>
+  <title>LAMP环境安装和根据端口配置多个项目 | Kevin</title>
   
 
 
@@ -251,33 +251,164 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/13/LAMP环境安装和根据端口配置多个项目/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kevin">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/dm.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kevin">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">About</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">LAMP环境安装和根据端口配置多个项目</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-13T15:52:38+08:00">
+                2019-07-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>1 安装wget<br>如果系统已安装wget,请跳过此步骤<br>yum install wget</p>
+<p>2 更新系统</p>
+<p>#更新yum软件包<br>yum check-update  </p>
+<p>#更新系统<br>yum update</p>
+<p>3禁用防火墙<br>systemctl status firewalld.service    ##查看防火墙<br>systemctl stop firewalld.service      ##停止防火墙<br>systemctl disable firewalld.service   ##开机自启服务 禁用</p>
+<p>4安装acache<br>4-1 安装Apache<br>yum install httpd<br>4-2 启动Apache<br>systemctl start  httpd.service<br>4-3 设置Apache开机启动<br>systemctl enable httpd.service<br>4-4 查看Apache版本信息<br>Httpd-v</p>
+<p>5安装mysql </p>
+<p>5-1 下载mysql5.7的rpm文件</p>
+<p>wget <a href="http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm" target="_blank" rel="noopener">http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm</a><br>5-2  安装rmp文件<br>yum localinstall mysql57-community-release-el7-8.noarch.rpm<br>5-3  安装MySQL数据库<br>yum install mysql-community-server<br>5-4   启动数据库<br>systemctl start mysqld<br>6-5   查看数据库密码<br>grep ‘temporary password’ /var/log/mysqld.log<br>5-6   进入数据库<br>mysql -u root -p  //回车输入密码 输入不显示密码<br>5-7   修改数据库初始密码<br>set password for ‘root’@’localhost’=password(‘Km@3814143’);<br>5-8   修改数据库远程连接权限<br>use mysql; //使用mysql 这个库<br>grant all privileges on wedo.* to ‘root(用户名)‘@’%’ identified by ‘密码’ with grant</p>
+<p>GRANT ALL PRIVILEGES ON <em>.</em> TO ‘root ‘@’%’ IDENTIFIED BY ‘Km@3814143’ WITH GRANT OPTION; </p>
+<p>option; //开启所有IP连接访问权限<br>flush privileges;//刷新权限<br>exit   //退出数据库<br>5-9   //重启数据库<br>service mysqld restart</p>
+<p>6安装PHP7<br>1安装依赖包<br>yum install gcc-c++ libxml2 libxml2-devel openssl openssl-devel bzip2 bzip2-devel libcurl libcurl-devel libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel gmp gmp-devel libmcrypt libmcrypt-devel readline readline-devel libxslt libxslt-devel<br>2安装php组新版本rpm<br>rpm -Uvh <a href="https://mirror.webtatic.com/yum/el7/epel-release.rpm" target="_blank" rel="noopener">https://mirror.webtatic.com/yum/el7/epel-release.rpm</a><br>rpm -Uvh <a href="https://mirror.webtatic.com/yum/el7/webtatic-release.rpm" target="_blank" rel="noopener">https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</a><br>3查看有哪些php最新版的安装包文件<br>yum search php71<br>4安装php7最新版<br>yum install mod_php71w php71w-mysqlnd php71w-cli php71w-fpm<br>5查看php 版本信息<br>php -v<br>6重启Apache 服务<br>systemctl restart httpd<br>7测试环境<br>vim /var/www/html/index.php<br>编辑<br><?php
+phpinfo();
+?></p>
+<p>网站根目录在 var/www/html<br>Apache配置目录在 etc/httpd/conf/httpd.conf<br>配置端口和访问路径<br>Listen 81<br>Listen 82</p>
+<p>&lt;VirtualHost *:81&gt;</p>
+<pre><code>DocumentRoot /var/www/html/wordpress</code></pre>
+
+<p>&lt;VirtualHost *:82&gt;</p>
+<pre><code>DocumentRoot /var/www/html/edusoho/web</code></pre>
+重启apache
+service httpd restart
+
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/10/你好/" rel="next" title="Linux基本操作">
+                <i class="fa fa-chevron-left"></i> Linux基本操作
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/13/激励自己/" rel="prev" title="激励自己">
+                激励自己 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -286,6 +417,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
